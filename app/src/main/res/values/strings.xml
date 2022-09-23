@@ -1,3 +1,26 @@
 <resources>
+    <string name="input_data_seminar_kp">Input Data Seminar KP</string>
+    <string name="list_data_peserta_seminar">List Peserta Seminar KP</string>
+    <string name="input_data">Input Data Peserta Seminar</string>
+    <string name="balasan_permohonan">Balasan Permohonan</string>
+    <string name="upload_balasan">Upload Balasan Permohonan</string>
+    <string name="laporan_akhir_kp">Laporan Akhir KP</string>
+    <string name="upload_laporan">Upload Laporan Akhir KP</string>
+    <string name="daftar">Daftar</string>
+    <string name="daftarkan">Daftarkan</string>
+    <string name="upload_file">Upload File</string>
+    <string name="nim">NIM</string>
+    <string name="nama">NAMA</string>
     <string name="app_name">Loki_A10</string>
+    <string name="nama_mahasiswa">Shefilla Raisya</string>
+    <string name="nim_mahasiswa">2011523013</string>
+    <string name="judul_laporan">Judul Laporan</string>
+    <string name="nama_laporan">Pembangunan Sistem Informasi Peminjaman Gedung di Universitas Andalas berbasis aplikasi mobile</string>
+    <string name="tanggal_seminar">Tanggal Seminar</string>
+    <string name="tanggal">08/09/2022</string>
+    <string name="dosen_pembimbing">Dosen Pembimbing</string>
+    <string name="nama_dosen">Husnil Kamil M.T</string>
+    <string name="tempat_pelaksanaan">Tempat Pelaksanaan :</string>
+    <string name="tempat">Semen Padang</string>
+
 </resources>
