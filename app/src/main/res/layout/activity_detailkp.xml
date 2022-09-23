@@ -11,26 +11,17 @@
       android:id="@+id/imageView7"
       android:layout_width="436dp"
       android:layout_height="129dp"
+      android:layout_marginTop="4dp"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.52"
+      app:layout_constraintHorizontal_bias="0.16"
       app:layout_constraintStart_toStartOf="parent"
-      app:srcCompat="@drawable/button_bawah"
-      tools:layout_editor_absoluteY="623dp" />
-
-  <ImageView
-      android:id="@+id/imageView8"
-      android:layout_width="78dp"
-      android:layout_height="77dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.009"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/ic_kembali_foreground" />
+      app:layout_constraintTop_toBottomOf="@+id/button2"
+      app:srcCompat="@drawable/button_bawah" />
 
   <EditText
       android:id="@+id/editTextTextPersonName2"
       android:layout_width="297dp"
-      android:layout_height="47dp"
+      android:layout_height="48dp"
       android:layout_marginTop="28dp"
       android:layout_marginEnd="16dp"
       android:ems="10"
@@ -41,51 +32,45 @@
       android:textSize="24sp"
       android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="1.0"
-      app:layout_constraintStart_toEndOf="@+id/imageView8"
       app:layout_constraintTop_toTopOf="parent" />
-
-  <ImageView
-      android:id="@+id/imageView9"
-      android:layout_width="85dp"
-      android:layout_height="78dp"
-      android:layout_marginTop="24dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.009"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView8"
-      app:srcCompat="@drawable/Gambar" />
 
   <EditText
       android:id="@+id/editTextTextPersonName4"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_height="48dp"
+      android:layout_marginStart="23dp"
+      android:layout_marginTop="4dp"
+      android:layout_marginEnd="108dp"
       android:ems="10"
       android:inputType="textPersonName"
       android:text="2011523013"
       android:textColor="#050505"
       android:textSize="16sp"
-      tools:layout_editor_absoluteX="116dp"
-      tools:layout_editor_absoluteY="127dp" />
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/imageView9"
+      app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
   <TextView
       android:id="@+id/textView5"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="156dp"
       android:text="Sheffila Raisya"
       android:textColor="#070707"
       android:textSize="18sp"
       android:textStyle="bold"
-      app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.137"
-      app:layout_constraintStart_toEndOf="@+id/imageView9" />
+      app:layout_constraintHorizontal_bias="0.697"
+      app:layout_constraintStart_toEndOf="@+id/imageView9"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
   <TextView
       android:id="@+id/textView9"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="12dp"
+      android:layout_marginTop="16dp"
       android:text="Nama Anggota:"
       android:textColor="#070707"
       android:textSize="14sp"
@@ -137,7 +122,8 @@
   <EditText
       android:id="@+id/editTextTextPersonName6"
       android:layout_width="373dp"
-      android:layout_height="34dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="3dp"
       android:ems="10"
       android:inputType="textPersonName"
       android:text="4. Fikri Nazif"
@@ -146,7 +132,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.789"
       app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="275dp" />
+      app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
   <TextView
       android:id="@+id/textView15"
@@ -165,7 +151,7 @@
   <EditText
       android:id="@+id/editTextTextPersonName7"
       android:layout_width="375dp"
-      android:layout_height="34dp"
+      android:layout_height="48dp"
       android:layout_marginTop="4dp"
       android:ems="10"
       android:inputType="textPersonName"
@@ -194,7 +180,7 @@
   <EditText
       android:id="@+id/editTextTextPersonName8"
       android:layout_width="371dp"
-      android:layout_height="34dp"
+      android:layout_height="48dp"
       android:ems="10"
       android:inputType="textPersonName"
       android:text="Husnil Kamil, MT"
@@ -222,7 +208,7 @@
   <EditText
       android:id="@+id/editTextTextPersonName9"
       android:layout_width="367dp"
-      android:layout_height="35dp"
+      android:layout_height="48dp"
       android:ems="10"
       android:inputType="textPersonName"
       android:text="Semen Padang"
@@ -235,13 +221,13 @@
 
   <Button
       android:id="@+id/button2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="44dp"
-      android:text="KP Selesai"
+      android:layout_width="78dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="20dp"
       android:background="#607EAA"
+      android:text="KP Selesai"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.492"
+      app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
 
@@ -255,5 +241,29 @@
       app:layout_constraintStart_toEndOf="@+id/textView5"
       app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
       app:srcCompat="@drawable/ic_list_foreground" />
+
+  <ImageView
+      android:id="@+id/imageView9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="3dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginBottom="16dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView9"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView18"
+      app:srcCompat="@drawable/foto" />
+
+  <ImageView
+      android:id="@+id/imageView18"
+      android:layout_width="67dp"
+      android:layout_height="64dp"
+      android:layout_marginStart="3dp"
+      android:layout_marginEnd="28dp"
+      android:onClick="ButtonBack"
+      app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_key_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
