@@ -39,6 +39,10 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.replace(R.id.fragmentContainerView3, fragment)
         fragmentTransaction.commit()
     }
+    fun ke_tambahPengajuanKp(view: View) {
+        intent = Intent(this, TambahPengajuanKpActivity::class.java)
+        startActivity(intent)
+    }
     fun ke_pengajuanKp(view: View) {
         intent = Intent(this, PengajuanKpActivity::class.java)
         startActivity(intent)

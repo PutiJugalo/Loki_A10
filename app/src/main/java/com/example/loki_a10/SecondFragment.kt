@@ -1,10 +1,15 @@
 package com.example.loki_a10
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.loki_a10.databinding.FragmentFirstBinding
+import com.example.loki_a10.databinding.FragmentSecondBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +26,13 @@ class SecondFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private var _binding: FragmentSecondBinding? = null
+    private val binding get() = _binding!!
+
+    private lateinit var recycleView: RecyclerView
+    private lateinit var instList: ArrayList<NamaInstansi>
+    private lateinit var adapter: MyAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,7 +46,35 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false)
+        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+//        return inflater.inflate(R.layout.fragment_second, container, false)
+        val root: View = binding.root
+        recycleView = binding.recyclerView1
+        return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        recycleView.layoutManager = LinearLayoutManager(context)
+
+        instList = ArrayList()
+
+        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Luthfia Humaira", "07/05/2022"))
+        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Puti Jugalo", "15/06/2022"))
+        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Fikri Nazif", "23/06/2022"))
+
+        adapter = MyAdapter(instList)
+        recycleView.adapter = adapter
+
+        adapter.onItemClick = {
+            val intent = Intent(context, DetailKpActivity::class.java)
+            startActivity(intent )
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     companion object {
