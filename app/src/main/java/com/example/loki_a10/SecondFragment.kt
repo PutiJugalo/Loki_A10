@@ -49,7 +49,7 @@ class SecondFragment : Fragment() {
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
 //        return inflater.inflate(R.layout.fragment_second, container, false)
         val root: View = binding.root
-        recycleView = binding.recyclerView1
+        recycleView = binding.recyclerView2
         return root
     }
 
