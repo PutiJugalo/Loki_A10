@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="388dp"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/roboto_medium"
         android:text="E-KP"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
