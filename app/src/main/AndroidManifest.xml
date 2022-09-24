@@ -14,19 +14,17 @@
         android:theme="@style/Theme.Loki_A10"
         tools:targetApi="31">
         <activity
-            android:name=".recycle_view1"
+            android:name=".Logbook2Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
             android:name=".ubah_sandi"
             android:exported="false" />
         <activity
             android:name=".edit_profil"
-            android:exported="false" />
-        <activity
-            android:name=".edit"
             android:exported="false" />
         <activity
             android:name=".LaporanKpActivity"
