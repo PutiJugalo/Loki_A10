@@ -4,14 +4,29 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/UNAND/Semester 5/PTB/Loki_A10/app/src/main/res/layout/activity_main.xml" value="0.12952898550724637" />
+        <entry key="..\:/Users/USER/Documents/Semester 5/cinto den/app/src/main/res/drawable/ic_baseline_arrow_circle_up_24.xml" value="0.1945" />
+        <entry key="..\:/Users/USER/Documents/Semester 5/cinto den/app/src/main/res/layout/activity_data_seminar_kp.xml" value="0.25" />
+        <entry key="..\:/Users/USER/Documents/Semester 5/cinto den/app/src/main/res/layout/activity_detail_kp.xml" value="0.22" />
+        <entry key="..\:/Users/USER/Documents/Semester 5/cinto den/app/src/main/res/layout/activity_input_data_seminar_kp.xml" value="0.25" />
+        <entry key="..\:/Users/USER/Documents/Semester 5/cinto den/app/src/main/res/layout/activity_laporan_kp.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/USER/Documents/Semester 5/cinto den/app/src/main/res/layout/activity_permohonan_kp.xml" value="0.22" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/drawable/ic_key.xml" value="0.1955" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_absensi_seminar.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_data_seminar_kp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_detail_kp.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_detail_logbook.xml" value="0.22" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_edit.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_edit_logbook.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_edit_profil.xml" value="0.25" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_logbook.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_pengajuan_kp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_tambah_logbook.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_tambah_pengajuan_kp.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/activity_ubah_sandi.xml" value="0.22" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/fragment_third.xml" value="0.33" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/fragment_third.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/PTB10/app/src/main/res/layout/recycle_view1.xml" value="0.33" />
       </map>
     </option>
   </component>
