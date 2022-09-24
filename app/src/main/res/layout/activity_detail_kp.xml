@@ -32,45 +32,45 @@
         android:id="@+id/button5"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="48dp"
-        android:text="Data Seminar KP"
         android:onClick="ke_dataSeminarKp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+        android:text="Data Seminar KP"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="675dp" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="32dp"
-        android:text="Logbook"
         android:onClick="ke_logbook"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        android:text="Logbook"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="620dp" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="32dp"
-        android:text="Permohonan KP"
         android:onClick="ke_permohonanKp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        android:text="Permohonan KP"
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="629dp" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="32dp"
-        android:text="Laporan KP"
         android:onClick="ke_laporanKp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        android:text="Laporan KP"
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="684dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="66dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
