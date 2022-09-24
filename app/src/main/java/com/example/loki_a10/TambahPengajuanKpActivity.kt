@@ -5,22 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class PengajuanKpActivity : AppCompatActivity() {
+class TambahPengajuanKpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pengajuan_kp)
+        setContentView(R.layout.activity_tambah_pengajuan_kp)
 
         supportActionBar?.hide()
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeButtonEnabled(true)
     }
+
     override fun onSupportNavigateUp(): Boolean {
         finish()
         return true
     }
-    fun ke_tambahPengajuanKp(view: View) {
-        intent = Intent(this, TambahPengajuanKpActivity::class.java)
+    fun ke_pengajuanKp(view: View) {
+        intent = Intent(this, PengajuanKpActivity::class.java)
         startActivity(intent)
     }
 }

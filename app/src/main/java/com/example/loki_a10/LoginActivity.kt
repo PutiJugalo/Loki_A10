@@ -9,9 +9,10 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        supportActionBar?.hide()
     }
     fun ke_main(view: View) {
-        intent = Intent(this, PengajuanKpActivity::class.java)
+        intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }
