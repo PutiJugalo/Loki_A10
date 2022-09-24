@@ -20,6 +20,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+            android:name=".ubah_sandi"
+            android:exported="false" />
+        <activity
+            android:name=".edit_profil"
+            android:exported="false" />
+        <activity
+            android:name=".edit"
+            android:exported="false" />
         <activity
             android:name=".LaporanKpActivity"
             android:exported="false">
