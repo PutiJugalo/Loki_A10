@@ -20,8 +20,8 @@ class TambahPengajuanKpActivity : AppCompatActivity() {
         finish()
         return true
     }
-    fun ke_pengajuanKp(view: View) {
-        intent = Intent(this, PengajuanKpActivity::class.java)
+    fun ke_main(view: View) {
+        intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }
