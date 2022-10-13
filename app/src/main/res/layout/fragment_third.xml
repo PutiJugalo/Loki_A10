@@ -46,11 +46,11 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Sheffila Raisya"
         android:textColor="#070707"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,6 +64,7 @@
         android:fontFamily="@font/roboto"
         android:text="2011523013"
         android:textColor="#292626"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,52 +74,53 @@
         android:id="@+id/imageView5"
         android:layout_width="39dp"
         android:layout_height="38dp"
-        android:layout_marginTop="312dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.868"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.437"
         app:srcCompat="@drawable/ic_setting" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="91dp"
         android:layout_height="22dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="136dp"
         android:fontFamily="@font/roboto"
         android:onClick="ke_editProfil"
         android:text="Edit Profil"
         android:textColor="#090909"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="36dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.306"
+        android:layout_width="40dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="124dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_key" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Ubah Kata Sandi"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="121dp"
         android:onClick="ke_ubahSandi"
+        android:text="Ubah Kata Sandi"
         android:textColor="#0B0A0A"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView12"
@@ -129,10 +131,12 @@
         android:onClick="ke_login"
         android:text="Logout"
         android:textColor="#0B0A0A"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

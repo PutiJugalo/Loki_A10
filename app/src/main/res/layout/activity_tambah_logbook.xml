@@ -12,7 +12,10 @@
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#0FFFFFFF"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.Toolbar
@@ -25,47 +28,49 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText11"
-        android:layout_width="327dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/roboto"
-        android:hint="hint"
-        android:text="Kegiatan"
-        android:textColor="#978A8A"
-        android:textSize="16sp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout21"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout22"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout21">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kegiatan" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button4"
         android:layout_width="326dp"
         android:layout_height="48dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
         android:text="TAMBAH"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText11" />
-
-    <EditText
-        android:id="@+id/editTextDate2"
-        android:layout_width="324dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="44dp"
-        android:ems="10"
-        android:inputType="date"
-        android:text="Tanggal"
-        android:textColor="#7E7373"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout22" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

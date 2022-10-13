@@ -12,7 +12,10 @@
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#0FFFFFFF"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.Toolbar
@@ -25,46 +28,54 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText13"
-        android:layout_width="340dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/roboto"
-        android:hint="hint"
-        android:text="Berdiskusi mengenai project"
-        android:textColor="#AFA5A5"
-        android:textSize="16sp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout23"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal"
+            android:text="01/03/2022"
+            android:inputType="date"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout23">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kegiatan"
+            android:text="Berdiskusi mengenai project"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button11"
         android:layout_width="326dp"
         android:layout_height="52dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
         android:text="SIMPAN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText13" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="337dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:inputType="date"
-        android:text="01/03/2022"
-        android:textColor="#8F8787"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
