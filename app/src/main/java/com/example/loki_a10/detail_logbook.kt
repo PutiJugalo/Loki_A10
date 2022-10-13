@@ -13,7 +13,7 @@ class detail_logbook : AppCompatActivity() {
         supportActionBar?.hide()
     }
     fun ke_editLogbook(view: View) {
-        intent = Intent(this, detail_logbook::class.java)
+        intent = Intent(this, edit_logbook::class.java)
         startActivity(intent)
     }
 }

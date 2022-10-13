@@ -3,6 +3,7 @@ package com.example.loki_a10
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,15 +20,15 @@ class LogbookActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_logbook)
+        setContentView(R.layout.activity_logbook)
 
-        binding = ActivityLogbookBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.toolbar6)
+//        binding = ActivityLogbookBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+//
+//        setSupportActionBar(binding.toolbar6)
         supportActionBar?.hide()
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar!!.setHomeButtonEnabled(true)
+//        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+//        supportActionBar!!.setHomeButtonEnabled(true)
 
         recycleView = findViewById(R.id.recycler_view3)
         recycleView.layoutManager = LinearLayoutManager(this)
@@ -42,7 +43,7 @@ class LogbookActivity : AppCompatActivity() {
         recycleView.adapter = adapter
 
         adapter.onItemClick = {
-            val intent = Intent(this, LogbookActivity::class.java)
+            val intent = Intent(this, detail_logbook::class.java)
             startActivity(intent )
         }
     }
@@ -61,5 +62,9 @@ class LogbookActivity : AppCompatActivity() {
 
         adapter = MyAdapter(instList)
 
+    }
+    fun ke_tambahLogbook(view: View) {
+        intent = Intent(this, tambah_logbook::class.java)
+        startActivity(intent)
     }
 }
