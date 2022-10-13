@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.loki_a10.adapter.MyAdapter
 import com.example.loki_a10.databinding.FragmentFirstBinding
 
 // TODO: Rename parameter arguments, choose names that match

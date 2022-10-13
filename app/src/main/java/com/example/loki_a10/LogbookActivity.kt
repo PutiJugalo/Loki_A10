@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.loki_a10.adapter.MyAdapter
 import com.example.loki_a10.databinding.ActivityLogbookBinding
 
 class LogbookActivity : AppCompatActivity() {

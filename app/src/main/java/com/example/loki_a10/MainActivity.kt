@@ -55,6 +55,10 @@ class MainActivity : AppCompatActivity() {
         intent = Intent(this, ubah_sandi::class.java)
         startActivity(intent)
     }
+    fun ke_absen(view: View) {
+        intent = Intent(this, absensi_seminar::class.java)
+        startActivity(intent)
+    }
     fun ke_pengajuanKp(view: View) {
         intent = Intent(this, PengajuanKpActivity::class.java)
         startActivity(intent)

@@ -7,5 +7,7 @@ class edit_logbook : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_logbook)
+
+        supportActionBar?.hide()
     }
 }
