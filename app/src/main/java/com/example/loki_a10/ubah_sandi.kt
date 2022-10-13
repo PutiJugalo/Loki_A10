@@ -7,5 +7,7 @@ class ubah_sandi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ubah_sandi)
+
+        supportActionBar?.hide()
     }
 }

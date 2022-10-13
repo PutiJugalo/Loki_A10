@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loki_A10"
         tools:targetApi="31">
-        <activity
-            android:name=".detail_logbook"
-            android:exported="false" />
+        <activity android:name=".detail_logbook"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".edit_logbook"
             android:exported="false" />
@@ -25,18 +25,12 @@
         <activity
             android:name=".absensi_seminar"
             android:exported="false" />
+
         <activity
-            android:name=".recycle_view1"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".edit_profil"
+            android:name=".ubah_sandi"
             android:exported="false" />
         <activity
-            android:name=".edit"
+            android:name=".edit_profil"
             android:exported="false" />
         <activity
             android:name=".LaporanKpActivity"
@@ -52,9 +46,12 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name=".Logbook2Activity"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".LogbookActivity"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

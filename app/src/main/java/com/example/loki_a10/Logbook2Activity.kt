@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class tambah_logbook : AppCompatActivity() {
+class Logbook2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tambah_logbook)
+        setContentView(R.layout.activity_logbook2)
 
         supportActionBar?.hide()
     }
-
+    fun ke_tambahLogbook(view: View) {
+        intent = Intent(this, tambah_logbook::class.java)
+        startActivity(intent)
+    }
 }

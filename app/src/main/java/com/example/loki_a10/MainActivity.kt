@@ -43,6 +43,22 @@ class MainActivity : AppCompatActivity() {
         intent = Intent(this, TambahPengajuanKpActivity::class.java)
         startActivity(intent)
     }
+    fun ke_login(view: View) {
+        intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+    fun ke_editProfil(view: View) {
+        intent = Intent(this, edit_profil::class.java)
+        startActivity(intent)
+    }
+    fun ke_ubahSandi(view: View) {
+        intent = Intent(this, ubah_sandi::class.java)
+        startActivity(intent)
+    }
+    fun ke_absen(view: View) {
+        intent = Intent(this, absensi_seminar::class.java)
+        startActivity(intent)
+    }
     fun ke_pengajuanKp(view: View) {
         intent = Intent(this, PengajuanKpActivity::class.java)
         startActivity(intent)
