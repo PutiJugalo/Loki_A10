@@ -24,4 +24,8 @@ class TambahPengajuanKpActivity : AppCompatActivity() {
         intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
+    fun ke_anggotaKelompok(view: View) {
+        intent = Intent(this, anggota_kelompok::class.java)
+        startActivity(intent)
+    }
 }

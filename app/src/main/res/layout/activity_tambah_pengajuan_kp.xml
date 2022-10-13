@@ -154,6 +154,7 @@
         android:layout_height="53dp"
         android:layout_marginTop="12dp"
         android:tint="#070707"
+        android:onClick="ke_anggotaKelompok"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
