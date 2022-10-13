@@ -25,62 +25,70 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText4"
-        android:layout_width="362dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/roboto"
-        android:hint="hint"
-        android:text="Kata Sandi Lama"
-        android:textColor="#A69F9F"
-        android:textSize="16sp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout10"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText5"
-        android:layout_width="363dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/roboto"
-        android:hint="hint"
-        android:text="Kata Sandi Baru"
-        android:textColor="#989191"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText4" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ketik Kata Sandi Lama"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText6"
-        android:layout_width="363dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/roboto"
-        android:hint="hint"
-        android:text="Ketik Ulang Kata Sandi Baru"
-        android:textColor="#A39C9C"
-        android:textSize="16sp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout13"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText5" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ketik Kata Sandi Baru"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout14"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="369dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ketik Ulang Kata Sandi Baru"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button10"
         android:layout_width="354dp"
         android:layout_height="48dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
         android:text="UBAH"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText6" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout14"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

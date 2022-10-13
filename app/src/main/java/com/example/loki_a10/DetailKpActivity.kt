@@ -22,6 +22,10 @@ class DetailKpActivity : AppCompatActivity() {
         intent = Intent(this, DataSeminarKpActivity::class.java)
         startActivity(intent)
     }
+    fun ke_logbook2(view: View) {
+        intent = Intent(this, Logbook2Activity::class.java)
+        startActivity(intent)
+    }
     fun ke_logbook(view: View) {
         intent = Intent(this, LogbookActivity::class.java)
         startActivity(intent)

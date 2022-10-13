@@ -1,4 +1,4 @@
-package com.example.loki_a10
+package com.example.loki_a10.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.loki_a10.NamaInstansi
+import com.example.loki_a10.R
 
 class MyAdapter(private val mhsList: ArrayList<NamaInstansi>): RecyclerView.Adapter<MyAdapter.namaMhsViewHolder>() {
     var onItemClick: ((NamaInstansi)-> Unit)?= null
