@@ -12,7 +12,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#0FFFFFFF"
+        android:background="@color/white"
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.Toolbar
@@ -67,13 +67,13 @@
         android:id="@+id/floatingActionButton3"
         android:layout_width="61dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="40dp"
         android:clickable="true"
         android:onClick="ke_editLogbook"
         app:backgroundTint="@color/blue2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_edit"
         tools:ignore="SpeakableTextPresentCheck" />
