@@ -71,12 +71,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonTambahLogbook"
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
+        android:onClick="tambahLogbookClicked"
         android:text="TAMBAH"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

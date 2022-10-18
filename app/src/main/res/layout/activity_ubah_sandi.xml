@@ -92,12 +92,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/buttonUbahPassword"
         android:layout_width="354dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
+        android:onClick="ubahPasswordClicked"
         android:text="UBAH"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

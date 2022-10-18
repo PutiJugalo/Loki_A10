@@ -49,6 +49,11 @@
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="200dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23">
@@ -66,6 +71,11 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout10"
         app:layout_constraintTop_toTopOf="@+id/textInputLayout10">
@@ -84,6 +94,11 @@
         android:layout_width="170dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout10"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
 
@@ -99,6 +114,11 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout14"
         app:layout_constraintTop_toTopOf="@+id/textInputLayout14">
@@ -116,6 +136,11 @@
         android:layout_width="170dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout14"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout14">
 
@@ -132,6 +157,11 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout25"
         app:layout_constraintTop_toTopOf="@+id/textInputLayout25">
@@ -150,6 +180,11 @@
         android:layout_width="170dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout25"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout25">
 
@@ -166,6 +201,11 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout26"
         app:layout_constraintTop_toTopOf="@+id/textInputLayout26">
@@ -179,11 +219,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/buttonDaftarPeserta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:background="@drawable/style_button"
+        android:onClick="dataSeminarClicked"
         android:text="Daftarkan"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout16"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout26"

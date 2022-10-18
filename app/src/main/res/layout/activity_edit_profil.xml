@@ -56,28 +56,31 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/buttonUbahProfil"
         android:layout_width="146dp"
         android:layout_height="48dp"
         android:layout_marginBottom="108dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
+        android:onClick="ubahProfilClicked"
         android:text="SIMPAN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout20"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout20" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout20"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout20"
+        tools:ignore="UsingOnClickInXml" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout17"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="370dp"
         android:layout_height="60dp"
-        android:layout_marginTop="60dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
+        android:layout_marginTop="32dp"
         app:boxCornerRadiusBottomEnd="32dp"
         app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,13 +100,13 @@
         android:layout_width="370dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
         app:boxCornerRadiusBottomEnd="32dp"
         app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout17"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout17"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout17">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -111,8 +114,7 @@
             android:layout_height="wrap_content"
             android:hint="NIM"
             android:inputType="number"
-            android:text="2011523013"
-            />
+            android:text="2011523013" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -121,13 +123,13 @@
         android:layout_width="370dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
         app:boxCornerRadiusBottomEnd="32dp"
         app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout18"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout18"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout18">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -135,8 +137,7 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:text="2011523013_shefilla@student.unand.ac.id"
-            />
+            android:text="2011523013_shefilla@student.unand.ac.id" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -145,13 +146,13 @@
         android:layout_width="370dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
         app:boxCornerRadiusBottomEnd="32dp"
         app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout19"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout19"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout19">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -159,8 +160,7 @@
             android:layout_height="wrap_content"
             android:hint="Tanggal Lahir"
             android:inputType="date"
-            android:text="21/10/2002"
-            />
+            android:text="21/10/2002" />
     </com.google.android.material.textfield.TextInputLayout>
 
 

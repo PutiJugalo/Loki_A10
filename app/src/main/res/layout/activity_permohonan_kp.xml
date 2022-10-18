@@ -29,7 +29,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/buttonEditLogbook"
         android:layout_width="163dp"
         android:layout_height="57dp"
         android:layout_marginTop="32dp"
