@@ -113,7 +113,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="92dp"
         android:onClick="ke_ubahSandi"
-        android:text="Ubah Kata Sandi"
+        android:text="Ubah Password"
         android:textColor="#0B0A0A"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

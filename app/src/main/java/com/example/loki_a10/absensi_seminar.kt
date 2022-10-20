@@ -7,6 +7,7 @@ import android.view.View
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.loki_a10.databinding.ActivityAbsensiSeminarBinding
 import com.example.loki_a10.databinding.ActivityDetailKpBinding
+import android.widget.Toast
 
 class absensi_seminar : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -26,5 +27,9 @@ class absensi_seminar : AppCompatActivity() {
 
         binding.textNamadiAbsensi.text = namaMhsLain
         binding.textTanggaldiAbsensi.text = tanggalSeminarLain
+    }
+
+    fun tombolHadirClicked(view: View) {
+        Toast.makeText(this, "Anda Sudah Hadir", Toast.LENGTH_SHORT).show()
     }
 }
