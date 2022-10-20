@@ -7,16 +7,17 @@ import android.view.View
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.loki_a10.adapter.MyAdapter
+import com.example.loki_a10.adapter.AdapterLogbook
 import com.example.loki_a10.databinding.ActivityLogbookBinding
+import com.example.loki_a10.models.Logbook
 
 class LogbookActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityLogbookBinding
     private lateinit var recycleView: RecyclerView
-    private lateinit var instList: ArrayList<NamaInstansi>
-    private lateinit var adapter: MyAdapter
+    private lateinit var logbookList: ArrayList<Logbook>
+    private lateinit var adapter: AdapterLogbook
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,35 +34,39 @@ class LogbookActivity : AppCompatActivity() {
         recycleView = findViewById(R.id.recycler_view3)
         recycleView.layoutManager = LinearLayoutManager(this)
 
-        instList = ArrayList()
+        logbookList = ArrayList()
 
-        instList.add(NamaInstansi(R.drawable.ic_book, "Berdiskusi mengenai project", "01/03/2022"))
-        instList.add(NamaInstansi(R.drawable.ic_book, "Membuat project", "02/03/2022"))
-        instList.add(NamaInstansi(R.drawable.ic_book, "Membuat project", "03/03/2022"))
+        logbookList.add(Logbook("Berdiskusi mengenai project", "01/03/2022"))
+        logbookList.add(Logbook("Membuat project", "02/03/2022"))
+        logbookList.add(Logbook("Membuat project", "03/03/2022"))
+        logbookList.add(Logbook("Berdiskusi mengenai project", "01/03/2022"))
+        logbookList.add(Logbook("Membuat project", "02/03/2022"))
+        logbookList.add(Logbook("Membuat project", "03/03/2022"))
+        logbookList.add(Logbook("Berdiskusi mengenai project", "01/03/2022"))
+        logbookList.add(Logbook("Membuat project", "02/03/2022"))
+        logbookList.add(Logbook("Membuat project", "03/03/2022"))
+        logbookList.add(Logbook("Berdiskusi mengenai project", "01/03/2022"))
+        logbookList.add(Logbook("Membuat project", "02/03/2022"))
+        logbookList.add(Logbook("Membuat project", "03/03/2022"))
+        logbookList.add(Logbook("Berdiskusi mengenai project", "01/03/2022"))
+        logbookList.add(Logbook("Membuat project", "02/03/2022"))
+        logbookList.add(Logbook("Membuat project", "03/03/2022"))
 
-        adapter = MyAdapter(instList)
+        adapter = AdapterLogbook(logbookList)
         recycleView.adapter = adapter
+        adapter.setOnItemClickListener(object : AdapterLogbook.onItemClickListener {
+            override fun onItemClick(position: Int) {
+                val intent = Intent(this@LogbookActivity, detail_logbook::class.java)
+                intent.putExtra("namaKegiatan", logbookList[position].namaKegiatan)
+                intent.putExtra("tanggalKegiatan",logbookList[position].tanggal)
+                startActivity(intent)
+            }
 
-        adapter.onItemClick = {
-            val intent = Intent(this, detail_logbook::class.java)
-            startActivity(intent )
-        }
+        })
     }
     override fun onSupportNavigateUp(): Boolean {
         finish()
         return true
-    }
-
-    private fun init(){
-        recycleView = findViewById(R.id.recycler_view3)
-
-        var instList = ArrayList<NamaInstansi>()
-        instList.add(NamaInstansi(R.drawable.ic_book, "Berdiskusi mengenai project", "01/03/2022"))
-        instList.add(NamaInstansi(R.drawable.ic_book, "Membuat project", "02/03/2022"))
-        instList.add(NamaInstansi(R.drawable.ic_book, "Membuat project", "03/03/2022"))
-
-        adapter = MyAdapter(instList)
-
     }
     fun ke_tambahLogbook(view: View) {
         intent = Intent(this, tambah_logbook::class.java)
