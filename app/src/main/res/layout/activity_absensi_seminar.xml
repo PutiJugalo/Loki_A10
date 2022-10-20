@@ -41,31 +41,32 @@
         app:tint="#090909" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textNamadiAbsensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Luthfia Humaira"
-        android:textColor="#131313"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textNIMdiAbsensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto"
         android:text="2011522005"
         android:textColor="#201E1E"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textNamadiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textNamadiAbsensi" />
 
     <Button
         android:id="@+id/button3"
@@ -80,21 +81,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="355dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/roboto"
-        android:text="Pembangunan Sistem Informasi Penjualan Pada PT.abc"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView39"
-        app:layout_constraintTop_toBottomOf="@+id/textView39" />
-
-    <TextView
-        android:id="@+id/textView39"
+        android:id="@+id/textJudulLaporandiAbsensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -108,6 +95,20 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <TextView
+        android:id="@+id/textNamaJuduldiAbsensi"
+        android:layout_width="355dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto"
+        android:text="Pembangunan Sistem Informasi Penjualan Pada PT.abc"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textJudulLaporandiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textJudulLaporandiAbsensi" />
+
+    <TextView
         android:id="@+id/textView40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,11 +118,11 @@
         android:textColor="@color/darkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="@+id/textNamaJuduldiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textNamaJuduldiAbsensi" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/textTanggaldiAbsensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -144,8 +145,8 @@
         android:textColor="@color/darkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView41"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+        app:layout_constraintStart_toStartOf="@+id/textTanggaldiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textTanggaldiAbsensi" />
 
     <TextView
         android:id="@+id/textView44"

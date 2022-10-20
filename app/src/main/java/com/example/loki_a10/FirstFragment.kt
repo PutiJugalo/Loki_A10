@@ -8,8 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.loki_a10.adapter.MyAdapter
+import com.example.loki_a10.adapter.AdapterInstansi
 import com.example.loki_a10.databinding.FragmentFirstBinding
+import com.example.loki_a10.models.Instansi
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,8 +31,8 @@ class FirstFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var recycleView: RecyclerView
-    private lateinit var instList: ArrayList<NamaInstansi>
-    private lateinit var adapter: MyAdapter
+    private lateinit var instansiList: ArrayList<Instansi>
+    private lateinit var adapter: AdapterInstansi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,19 +59,26 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recycleView.layoutManager = LinearLayoutManager(context)
 
-        instList = ArrayList()
+        instansiList = ArrayList()
 
-        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Semen Padang", "Sedang diajukan"))
-        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Kominfo", "Telah Selesai"))
-        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Bank Republik Indonesia", "Telah Selesai"))
+        instansiList.add(Instansi("Semen Padang", "Sedang diajukan"))
+        instansiList.add(Instansi("Kominfo", "Telah Selesai"))
+        instansiList.add(Instansi("Bank Republik Indonesia", "Telah Selesai"))
+        instansiList.add(Instansi("Bank Syariah Indonesia", "Telah Selesai"))
+        instansiList.add(Instansi("Tokopedia", "Telah Selesai"))
 
-        adapter = MyAdapter(instList)
+        adapter = AdapterInstansi(instansiList)
         recycleView.adapter = adapter
 
-        adapter.onItemClick = {
-            val intent = Intent(context, DetailKpActivity::class.java)
-            startActivity(intent )
-        }
+        adapter.setOnItemClickListener(object : AdapterInstansi.onItemClickListener {
+            override fun onItemClick(position: Int) {
+                val intent = Intent(this@FirstFragment.requireContext(), DetailKpActivity::class.java)
+                intent.putExtra("namaInstansi", instansiList[position].namaInstansi)
+                intent.putExtra("statusKP",instansiList[position].statusKP)
+                startActivity(intent)
+            }
+
+        })
     }
 
     override fun onDestroyView() {

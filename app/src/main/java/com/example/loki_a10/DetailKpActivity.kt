@@ -4,15 +4,28 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.ui.AppBarConfiguration
+import com.example.loki_a10.databinding.ActivityDetailKpBinding
+import com.example.loki_a10.databinding.ActivityDetailLogbookBinding
 
 class DetailKpActivity : AppCompatActivity() {
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityDetailKpBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_kp)
-        supportActionBar?.hide()
+        binding = ActivityDetailKpBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar!!.setHomeButtonEnabled(true)
+        supportActionBar?.hide()
+        val bundle : Bundle? = intent.extras
+        val namaInstansi = bundle!!.getString("namaInstansi")
+
+        binding.textNamaInstansidiDetailKP.text = namaInstansi
+
+//        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+//        supportActionBar!!.setHomeButtonEnabled(true)
     }
     override fun onSupportNavigateUp(): Boolean {
         finish()
