@@ -12,163 +12,150 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
-        app:boxCornerRadiusBottomEnd="32dp"
-        app:boxCornerRadiusBottomStart="32dp"
-        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="Input Data Seminar KP"></androidx.appcompat.widget.Toolbar>
+            app:title="INPUT DATA SEMINAR KP">
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="44dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="Shefilla Raisya"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="2011523013"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout8"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="363dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
-        app:boxCornerRadiusBottomEnd="32dp"
-        app:boxCornerRadiusBottomStart="32dp"
-        app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Judul Laporan"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout9"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="363dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
-        app:boxCornerRadiusBottomEnd="32dp"
-        app:boxCornerRadiusBottomStart="32dp"
-        app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tanggal Seminar"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout11"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="363dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
-        app:boxCornerRadiusBottomEnd="32dp"
-        app:boxCornerRadiusBottomStart="32dp"
-        app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Dosen Pembimbing"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout12"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="363dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        app:boxCornerRadiusTopStart="32dp"
-        app:boxCornerRadiusTopEnd="32dp"
-        app:boxCornerRadiusBottomEnd="32dp"
-        app:boxCornerRadiusBottomStart="32dp"
-        app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tempat Pelaksanaan"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imageView16"
         android:layout_width="108dp"
         android:layout_height="104dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         app:srcCompat="@drawable/ic_icon_profile"
         app:tint="@color/black" />
 
-    <Button
-        android:id="@+id/buttonNextDataSeminarKP"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/textNamadiDaftarSeminar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="NEXT"
-        android:onClick="ke_dataPesertaSeminarKP"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Shefilla Raisya"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textNIMdiDaftarSeminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="2011523013"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textNamadiDaftarSeminar"
+        app:layout_constraintTop_toBottomOf="@+id/textNamadiDaftarSeminar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Laporan" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal Seminar" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout27"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dosen Pembimbing" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout28"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout27"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout27"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout27">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempat Pelaksanaan" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonNextdiDaftarSeminarKP"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/style_button"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout12"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout12"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout12" />
+        android:onClick="ke_dataSeminarKP"
+        android:text="NEXT"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout28"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout28"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout28" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

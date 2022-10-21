@@ -42,8 +42,8 @@ class DetailKpActivity : AppCompatActivity() {
         intent = Intent(this, LaporanKpActivity::class.java)
         startActivity(intent)
     }
-    fun ke_dataDaftarSeminarKP(view: View) {
-        intent = Intent(this, DataSeminarKpActivity::class.java)
+    fun ke_daftarSeminarKP(view: View) {
+        intent = Intent(this, DaftarSeminarKpActivity::class.java)
         startActivity(intent)
     }
 }
