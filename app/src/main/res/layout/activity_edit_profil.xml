@@ -50,9 +50,8 @@
         android:text="Ganti Foto"
         android:textColor="#0C0C0C"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
@@ -74,7 +73,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout17"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="370dp"
+        android:layout_width="363dp"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
         app:boxCornerRadiusBottomEnd="32dp"
@@ -97,7 +96,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout18"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="370dp"
+        android:layout_width="363dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         app:boxCornerRadiusBottomEnd="32dp"
@@ -120,7 +119,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout19"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="370dp"
+        android:layout_width="363dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         app:boxCornerRadiusBottomEnd="32dp"
@@ -143,7 +142,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout20"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="370dp"
+        android:layout_width="363dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         app:boxCornerRadiusBottomEnd="32dp"
