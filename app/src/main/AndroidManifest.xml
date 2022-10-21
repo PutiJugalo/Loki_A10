@@ -49,9 +49,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Logbook2Activity"
-            android:exported="true"></activity>
-        <activity
             android:name=".LogbookActivity"
             android:exported="true">
             <meta-data
@@ -84,14 +81,6 @@
             android:name=".TambahPengajuanKpActivity"
             android:exported="true"
             android:label="TambahPengajuanKpActivity">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".PengajuanKpActivity"
-            android:exported="true"
-            android:label="PengajuanKpActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

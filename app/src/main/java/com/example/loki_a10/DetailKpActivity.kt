@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.loki_a10.databinding.ActivityDetailKpBinding
-import com.example.loki_a10.databinding.ActivityDetailLogbookBinding
 
 class DetailKpActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -31,14 +30,6 @@ class DetailKpActivity : AppCompatActivity() {
         finish()
         return true
     }
-    fun ke_dataSeminarKp(view: View) {
-        intent = Intent(this, DataSeminarKpActivity::class.java)
-        startActivity(intent)
-    }
-    fun ke_logbook2(view: View) {
-        intent = Intent(this, Logbook2Activity::class.java)
-        startActivity(intent)
-    }
     fun ke_logbook(view: View) {
         intent = Intent(this, LogbookActivity::class.java)
         startActivity(intent)
@@ -49,6 +40,10 @@ class DetailKpActivity : AppCompatActivity() {
     }
     fun ke_laporanKp(view: View) {
         intent = Intent(this, LaporanKpActivity::class.java)
+        startActivity(intent)
+    }
+    fun ke_dataDaftarSeminarKP(view: View) {
+        intent = Intent(this, DataSeminarKpActivity::class.java)
         startActivity(intent)
     }
 }
