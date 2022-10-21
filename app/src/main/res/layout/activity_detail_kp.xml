@@ -48,7 +48,7 @@
         android:layout_height="51dp"
         android:background="@drawable/style_button"
         android:text="Data Seminar KP"
-        android:onClick="ke_dataDaftarSeminarKP"
+        android:onClick="ke_daftarSeminarKP"
         app:layout_constraintEnd_toEndOf="@+id/button6"
         app:layout_constraintTop_toTopOf="@+id/button8" />
 
