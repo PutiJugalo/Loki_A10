@@ -9,69 +9,60 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="EDIT PROFIL">
-
+            app:title="INPUT DATA SEMINAR KP">
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="120dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:id="@+id/imageView16"
+        android:layout_width="108dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         app:srcCompat="@drawable/ic_icon_profile"
-        app:tint="#0A0A0B"
-        tools:ignore="MissingConstraints" />
+        app:tint="@color/black" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textNamadiDaftarSeminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Ganti Foto"
-        android:textColor="#0C0C0C"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        android:text="Shefilla Raisya"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
 
-    <Button
-        android:id="@+id/buttonUbahProfil"
-        android:layout_width="146dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="108dp"
-        android:background="@drawable/style_button"
+    <TextView
+        android:id="@+id/textNIMdiDaftarSeminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
-        android:onClick="ubahProfilClicked"
-        android:text="SIMPAN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout20"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout20"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout20"
-        tools:ignore="UsingOnClickInXml" />
+        android:text="2011523013"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textNamadiDaftarSeminar"
+        app:layout_constraintTop_toBottomOf="@+id/textNamadiDaftarSeminar" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout17"
+        android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="363dp"
         android:layout_height="60dp"
@@ -83,84 +74,88 @@
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11">
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama"
-            android:inputType="text"
-            android:text="Shefilla Raisya" />
+            android:hint="Judul Laporan" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout18"
+        android:id="@+id/textInputLayout2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="363dp"
         android:layout_height="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         app:boxCornerRadiusBottomEnd="32dp"
         app:boxCornerRadiusBottomStart="32dp"
         app:boxCornerRadiusTopEnd="32dp"
         app:boxCornerRadiusTopStart="32dp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout17"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout17"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout17">
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="NIM"
-            android:inputType="number"
-            android:text="2011523013" />
+            android:hint="Tanggal Seminar" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout19"
+        android:id="@+id/textInputLayout27"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="363dp"
         android:layout_height="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         app:boxCornerRadiusBottomEnd="32dp"
         app:boxCornerRadiusBottomStart="32dp"
         app:boxCornerRadiusTopEnd="32dp"
         app:boxCornerRadiusTopStart="32dp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout18"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout18"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout18">
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:text="2011523013_shefilla@student.unand.ac.id" />
+            android:hint="Dosen Pembimbing" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout20"
+        android:id="@+id/textInputLayout28"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="363dp"
         android:layout_height="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         app:boxCornerRadiusBottomEnd="32dp"
         app:boxCornerRadiusBottomStart="32dp"
         app:boxCornerRadiusTopEnd="32dp"
         app:boxCornerRadiusTopStart="32dp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout19"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout19"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout19">
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout27"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout27"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout27">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tanggal Lahir"
-            android:inputType="date"
-            android:text="21/10/2002" />
+            android:hint="Tempat Pelaksanaan" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonNextdiDaftarSeminarKP"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/style_button"
+        android:onClick="ke_dataSeminarKP"
+        android:text="NEXT"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout28"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout28"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout28" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

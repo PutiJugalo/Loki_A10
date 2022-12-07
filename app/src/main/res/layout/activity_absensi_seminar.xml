@@ -30,57 +30,71 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="102dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         app:srcCompat="@drawable/ic_icon_profile"
         app:tint="#090909" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textNamadiAbsensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Luthfia Humaira"
-        android:textColor="#131313"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textNIMdiAbsensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto"
         android:text="2011522005"
         android:textColor="#201E1E"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintStart_toStartOf="@+id/textNamadiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textNamadiAbsensi" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonHadir"
         android:layout_width="139dp"
         android:layout_height="48dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
+        android:onClick="tombolHadirClicked"
         android:text="HADIR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textJudulLaporandiAbsensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="JUDUL LAPORAN"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textNamaJuduldiAbsensi"
         android:layout_width="355dp"
         android:layout_height="54dp"
         android:layout_marginTop="12dp"
@@ -90,22 +104,8 @@
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView39"
-        app:layout_constraintTop_toBottomOf="@+id/textView39" />
-
-    <TextView
-        android:id="@+id/textView39"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="JUDUL LAPORAN"
-        android:textColor="@color/darkblue"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintStart_toStartOf="@+id/textJudulLaporandiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textJudulLaporandiAbsensi" />
 
     <TextView
         android:id="@+id/textView40"
@@ -115,13 +115,14 @@
         android:fontFamily="@font/roboto_bold"
         android:text="TANGGAL SEMINAR"
         android:textColor="@color/darkblue"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="@+id/textNamaJuduldiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textNamaJuduldiAbsensi" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/textTanggaldiAbsensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -142,10 +143,11 @@
         android:fontFamily="@font/roboto_bold"
         android:text="DOSEN PEMBIMBING"
         android:textColor="@color/darkblue"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView41"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+        app:layout_constraintStart_toStartOf="@+id/textTanggaldiAbsensi"
+        app:layout_constraintTop_toBottomOf="@+id/textTanggaldiAbsensi" />
 
     <TextView
         android:id="@+id/textView44"

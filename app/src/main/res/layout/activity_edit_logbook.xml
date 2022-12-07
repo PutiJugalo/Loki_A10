@@ -31,9 +31,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout23"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="369dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar">
@@ -50,9 +55,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout24"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="369dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="16dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout23">
@@ -67,12 +77,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/buttonEditLogbook"
         android:layout_width="326dp"
         android:layout_height="52dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
+        android:onClick="editLogbookClicked"
         android:text="SIMPAN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

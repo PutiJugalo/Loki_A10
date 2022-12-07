@@ -8,8 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.loki_a10.adapter.MyAdapter
+import com.example.loki_a10.adapter.AdapterInfoSeminarLain
 import com.example.loki_a10.databinding.FragmentSecondBinding
+import com.example.loki_a10.models.InfoSeminarLain
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,8 +31,8 @@ class SecondFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var recycleView: RecyclerView
-    private lateinit var instList: ArrayList<NamaInstansi>
-    private lateinit var adapter: MyAdapter
+    private lateinit var mhsLainList: ArrayList<InfoSeminarLain>
+    private lateinit var adapter: AdapterInfoSeminarLain
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,19 +58,24 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recycleView.layoutManager = LinearLayoutManager(context)
 
-        instList = ArrayList()
+        mhsLainList = ArrayList()
 
-        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Luthfia Humaira", "07/05/2022"))
-        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Puti Jugalo", "15/06/2022"))
-        instList.add(NamaInstansi(R.drawable.ic_icon_profile, "Fikri Nazif", "23/06/2022"))
+        mhsLainList.add(InfoSeminarLain("Luthfia Humaira", "07/05/2022"))
+        mhsLainList.add(InfoSeminarLain("Puti Jugalo", "15/06/2022"))
+        mhsLainList.add(InfoSeminarLain("Fikri Nazif", "23/06/2022"))
 
-        adapter = MyAdapter(instList)
+        adapter = AdapterInfoSeminarLain(mhsLainList)
         recycleView.adapter = adapter
 
-        adapter.onItemClick = {
-            val intent = Intent(context, absensi_seminar::class.java)
-            startActivity(intent )
-        }
+        adapter.setOnItemClickListener(object : AdapterInfoSeminarLain.onItemClickListener{
+            override fun onItemClick(position: Int) {
+                val intent = Intent(this@SecondFragment.requireContext(), absensi_seminar::class.java)
+                intent.putExtra("namaMhsLain", mhsLainList[position].namaMhsLain)
+                intent.putExtra("tanggalSeminarLain",mhsLainList[position].tanggalSeminarLain)
+                startActivity(intent)
+            }
+
+        })
     }
 
     override fun onDestroyView() {

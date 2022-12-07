@@ -12,7 +12,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0FFFFFFF"
+        android:background="#FFFF"
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.Toolbar
@@ -43,9 +43,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout9"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="356dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="30dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4">
@@ -60,9 +65,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout10"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="356dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
@@ -77,9 +87,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout11"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="356dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
@@ -94,9 +109,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout12"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="356dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
@@ -111,9 +131,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout13"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="356dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout12">
@@ -126,12 +151,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonAjukan"
         android:layout_width="139dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/style_button"
         android:text="AJUKAN"
+        android:onClick="ke_main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

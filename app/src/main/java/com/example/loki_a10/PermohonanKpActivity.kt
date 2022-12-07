@@ -2,6 +2,8 @@ package com.example.loki_a10
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 
 class PermohonanKpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +18,8 @@ class PermohonanKpActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         finish()
         return true
+    }
+    fun uploadFilePermohonanClicked(view: View) {
+        Toast.makeText(this, "File Permohonan KP Berhasil di Upload", Toast.LENGTH_SHORT).show()
     }
 }

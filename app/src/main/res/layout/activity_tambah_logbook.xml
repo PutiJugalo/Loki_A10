@@ -31,9 +31,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout21"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="369dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar">
@@ -47,9 +52,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout22"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="369dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout21">
@@ -61,12 +71,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonTambahLogbook"
         android:layout_width="326dp"
         android:layout_height="48dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto"
+        android:onClick="tambahLogbookClicked"
         android:text="TAMBAH"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
