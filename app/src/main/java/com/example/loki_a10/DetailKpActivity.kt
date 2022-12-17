@@ -1,11 +1,12 @@
 package com.example.loki_a10
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.loki_a10.databinding.ActivityDetailKpBinding
+import com.example.loki_a10.mynotification.NotificationChannelActivity
 
 class DetailKpActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -44,6 +45,14 @@ class DetailKpActivity : AppCompatActivity() {
     }
     fun ke_daftarSeminarKP(view: View) {
         intent = Intent(this, DaftarSeminarKpActivity::class.java)
+        startActivity(intent)
+    }
+    fun ke_laporKPSelesai(view: View) {
+        intent = Intent(this, LaporKpSelesaiActivity::class.java)
+        startActivity(intent)
+    }
+    fun ke_notifTest(view: View) {
+        intent = Intent(this, NotificationChannelActivity::class.java)
         startActivity(intent)
     }
 }

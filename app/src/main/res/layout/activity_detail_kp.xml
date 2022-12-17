@@ -56,10 +56,10 @@
         android:id="@+id/button8"
         android:layout_width="175dp"
         android:layout_height="51dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/style_button"
         android:onClick="ke_laporanKp"
-        android:text="Laporan KP"
+        android:text="Upload Laporan"
         app:layout_constraintStart_toStartOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
@@ -252,6 +252,30 @@
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <Button
+        android:id="@+id/buttonNotifTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/style_button"
+        android:onClick="ke_notifTest"
+        android:text="NOTIFICATION"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLaporKPSelesai"
+        app:layout_constraintStart_toStartOf="@+id/buttonLaporKPSelesai"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLaporKPSelesai" />
+
+    <Button
+        android:id="@+id/buttonLaporKPSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="LAPOR KP SELESAI"
+        android:onClick="ke_laporKPSelesai"
+        android:background="@drawable/style_button"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
