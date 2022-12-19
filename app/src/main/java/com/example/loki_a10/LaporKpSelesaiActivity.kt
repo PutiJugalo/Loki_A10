@@ -72,6 +72,6 @@ class LaporKpSelesaiActivity : AppCompatActivity() {
     }
 }
 
-private fun Button.checkSessionStatus() {
+internal fun Button.checkSessionStatus() {
 
 }
