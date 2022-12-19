@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "235582247364",
+    "project_id": "loki-a10",
+    "storage_bucket": "loki-a10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235582247364:android:6d8e8364aa5d0ba8e95491",
+        "android_client_info": {
+          "package_name": "com.example.loki_a10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235582247364-h26mkst5l1slptl43j5ug9i8f7pn2jdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANkIzAFAIcHuoVBSd_zfdrtIUmqpY5Pwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235582247364-h26mkst5l1slptl43j5ug9i8f7pn2jdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
