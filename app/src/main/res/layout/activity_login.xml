@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/inputUsernameLogin"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="363dp"
@@ -37,6 +37,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
+        android:hint="Username"
         app:hintTextColor="#607EAA"
         app:endIconMode="clear_text"
         app:boxCornerRadiusTopStart="32dp"
@@ -48,14 +49,9 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:startIconDrawable="@drawable/ic_icon_username">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+    </EditText>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/inputPasswordLogin"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="363dp"
@@ -63,6 +59,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:hint="Password"
+        android:inputType="textPassword"
         app:hintTextColor="#607EAA"
         app:boxCornerRadiusTopStart="32dp"
         app:boxCornerRadiusTopEnd="32dp"
@@ -74,12 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputUsernameLogin"
         app:startIconDrawable="@drawable/ic_icon_password">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
+    </EditText>
 
     <Button
         android:id="@+id/buttonLogin"
