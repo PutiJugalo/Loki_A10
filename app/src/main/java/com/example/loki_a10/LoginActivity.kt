@@ -56,14 +56,14 @@ class LoginActivity : AppCompatActivity() {
                         putString("TOKEN", token)
                         apply()
                     }
-                    Toast.makeText(this@LoginActivity, "Login Berhasil", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, "Selamat Datang", Toast.LENGTH_SHORT).show()
 
                     val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(
                         this@LoginActivity,
-                        "Username atau Password yang anda masukkan salah",
+                        "Username/Password Salah",
                         Toast.LENGTH_SHORT
                     ).show()
                 }

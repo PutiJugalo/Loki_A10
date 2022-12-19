@@ -38,18 +38,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView16"
         app:srcCompat="@drawable/ic_baseline_arrow_circle_up_24" />
 
-    <Button
-        android:id="@+id/buttonTambahLogbook"
-        android:layout_width="164dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="32dp"
-        android:onClick="uploadLaporanKPClicked"
-        android:text="Upload File"
-        android:background="@drawable/style_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
@@ -63,6 +51,18 @@
         app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <Button
+        android:id="@+id/buttonUploadLaporanKP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Uplaod Laporan"
+        android:onClick="uploadLaporanKPClicked"
+        android:background="@drawable/style_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
