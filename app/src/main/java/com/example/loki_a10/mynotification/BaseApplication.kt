@@ -9,7 +9,8 @@ class BaseApplication : Application(){
 
     companion object{
         const val CHANNEL_1_ID = "channel1"
-        const val CHANNEL_2_ID = "channel2"
+        const val CHANNEL_UBAH_SANDI_ID = "channelUbahSandi"
+        const val CHANNEL_LAPOR_KP_SELESAI_ID = "channelLaporKPSelesai"
     }
 
     override fun onCreate() {
@@ -26,16 +27,24 @@ class BaseApplication : Application(){
             )
             channel1.description = "Ini adalah channel 1"
 
-//            val channel2 = NotificationChannel(
-//                CHANNEL_2_ID,
-//                "Channel Dua",
-//                NotificationManager.IMPORTANCE_LOW
-//            )
-//            channel2.description = "Ini adalah channel 2"
+            val channelUbahSandi = NotificationChannel(
+                CHANNEL_UBAH_SANDI_ID,
+                "Channel Ubah Sandi",
+                NotificationManager.IMPORTANCE_HIGH
+            )
+            channelUbahSandi.description = "Ini adalah channel Ubah Kata Sandi"
+
+            val channelLaporKpSelesai = NotificationChannel(
+                CHANNEL_LAPOR_KP_SELESAI_ID,
+                "Channel Lapor KP Selesai",
+                NotificationManager.IMPORTANCE_HIGH
+            )
+            channelUbahSandi.description = "Ini adalah channel Lapor KP Selesai"
 
             val manager = getSystemService(NotificationManager::class.java)
             manager.createNotificationChannel(channel1)
-//            manager.createNotificationChannel(channel2)
+            manager.createNotificationChannel(channelUbahSandi)
+            manager.createNotificationChannel(channelLaporKpSelesai)
         }
     }
 }
