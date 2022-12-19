@@ -6,9 +6,6 @@ class UserRequest {
     @field:SerializedName("authorisation")
     val authorisation: UserResponse? = null
 
-//    @field:SerializedName("user")
-//    val user: User? = null
-
     @field:SerializedName("status")
     val status: String? = null
 
