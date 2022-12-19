@@ -1,10 +1,16 @@
 package com.example.loki_a10
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationManagerCompat
+import com.google.firebase.FirebaseApp
+import com.google.firebase.messaging.FirebaseMessaging
+import kotlinx.android.synthetic.main.activity_lapor_kp_selesai.*
 
 class LaporKpSelesaiActivity : AppCompatActivity() {
 
@@ -17,6 +23,17 @@ class LaporKpSelesaiActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         notificationManager = NotificationManagerCompat.from(this)
+
+        FirebaseApp.initializeApp(this)
+        FirebaseMessaging.getInstance().subscribeToTopic("E-KP") //THis for by topic
+            .addOnCompleteListener { task ->
+                var msg = "success"
+                if (!task.isSuccessful) {
+                    msg = "gagal"
+                }
+                Log.d(TAG, msg)
+            }
+        buttonIyaLaporKPSelesai.checkSessionStatus()
 
 //        buttonIyaLaporKPSelesai.setOnClickListener {
 ////            val title = titleNotification.text.toString()
@@ -53,4 +70,8 @@ class LaporKpSelesaiActivity : AppCompatActivity() {
         intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
+}
+
+private fun Button.checkSessionStatus() {
+
 }

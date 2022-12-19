@@ -28,6 +28,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         displayNotification(remoteMessage.notification?.title.toString(), remoteMessage.notification?.body.toString())
     }
 
+
     fun displayNotification(title : String ,message : String) {
         // Membuat action notifikasi ketika di tekan
         val intent = Intent(this, MainActivity::class.java)
