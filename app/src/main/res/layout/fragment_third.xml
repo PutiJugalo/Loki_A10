@@ -57,12 +57,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
-        android:id="@+id/textNIMdiProfil"
+        android:id="@+id/textEmaildiProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/roboto"
-        android:text="2011523013"
+        android:text="shefillaraisya30@gmail.com"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/textNamadiProfil"
@@ -93,7 +93,7 @@
         android:textColor="#090909"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNIMdiProfil"
+        app:layout_constraintTop_toBottomOf="@+id/textEmaildiProfil"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
