@@ -1,9 +1,9 @@
 package com.example.loki_a10
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.loki_a10.databinding.ActivityMainBinding
 
@@ -48,11 +48,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun ke_editProfil(view: View) {
-        intent = Intent(this, edit_profil::class.java)
+        intent = Intent(this, editprofil::class.java)
         startActivity(intent)
     }
     fun ke_ubahSandi(view: View) {
-        intent = Intent(this, ubah_sandi::class.java)
+        intent = Intent(this, UbahSandi::class.java)
         startActivity(intent)
     }
     fun ke_absen(view: View) {

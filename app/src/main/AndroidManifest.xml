@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.loki_a10">
-
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -69,10 +68,10 @@
             android:name=".absensi_seminar"
             android:exported="false" />
         <activity
-            android:name=".ubah_sandi"
+            android:name=".UbahSandi"
             android:exported="false" />
         <activity
-            android:name=".edit_profil"
+            android:name=".editprofil"
             android:exported="false" />
         <activity
             android:name=".LaporanKpActivity"

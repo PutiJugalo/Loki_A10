@@ -41,10 +41,11 @@
         app:layout_constraintTop_toBottomOf="@+id/appbar">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textPasswordLamadiUbahSandi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ketik Kata Sandi Lama"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -63,10 +64,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textPasswordBarudiUbahSandi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ketik Kata Sandi Baru"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -85,10 +87,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textKonfirmasiPassworddiUbahSandi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ketik Ulang Kata Sandi Baru"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
