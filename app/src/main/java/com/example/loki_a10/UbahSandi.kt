@@ -10,9 +10,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationManagerCompat
 import com.example.loki_a10.databinding.ActivityUbahSandiBinding
-import com.example.loki_a10.retrofitModel.Retrofit
+import com.example.loki_a10.retrofitModel.RetrofitClient
 import com.example.loki_a10.retrofitModel.UbahSandiResponse
-import com.example.loki_a10.retrofitModel.UserApi
 import com.google.firebase.FirebaseApp
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_ubah_sandi.*
@@ -55,8 +54,9 @@ class UbahSandi : AppCompatActivity() {
         val new_password = binding.textPasswordBarudiUbahSandi.text.toString()
         val confirm_password = binding.textKonfirmasiPassworddiUbahSandi.text.toString()
 
-        val client: UserApi = Retrofit().getService()
-        val call: Call<UbahSandiResponse> = client.updatePassword(token = "Bearer $token", old_password, new_password,confirm_password)
+        val retrofitClient = RetrofitClient.create()
+        val call = retrofitClient.updatePassword(token = "Bearer $token", old_password, new_password,confirm_password)
+
         Log.d("update-debug", "$old_password|$new_password|$confirm_password|Bearer $token")
 
         call.enqueue(object: Callback<UbahSandiResponse> {

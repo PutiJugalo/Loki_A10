@@ -8,9 +8,8 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.loki_a10.databinding.ActivityEditProfilBinding
-import com.example.loki_a10.retrofitModel.Retrofit
+import com.example.loki_a10.retrofitModel.RetrofitClient
 import com.example.loki_a10.retrofitModel.UpdateProfilResponse
-import com.example.loki_a10.retrofitModel.UserApi
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -21,6 +20,7 @@ class editprofil : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityEditProfilBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         val getNama = intent.getStringExtra("Nama")
         val getEmail = intent.getStringExtra("Email")
@@ -37,8 +37,9 @@ class editprofil : AppCompatActivity() {
         val name = binding.textEditNamadiEditProfil.text.toString()
         val email = binding.textEditEmaildiEditProfil.text.toString()
 
-        val client: UserApi = Retrofit().getService()
-        val call: Call<UpdateProfilResponse> = client.updateProfile(token = "Bearer $token", name, email)
+        val retrofitClient = RetrofitClient.create()
+        val call = retrofitClient.updateProfile( token = "Bearer $token", name, email)
+
         Log.d("update-debug", "$name|$email|Bearer $token")
 
         call.enqueue(object: Callback<UpdateProfilResponse> {

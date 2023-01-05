@@ -10,10 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.loki_a10.databinding.FragmentThirdBinding
-import com.example.loki_a10.retrofitModel.LogoutResponse
-import com.example.loki_a10.retrofitModel.Retrofit
-import com.example.loki_a10.retrofitModel.User
-import com.example.loki_a10.retrofitModel.UserApi
+import com.example.loki_a10.retrofitModel.*
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.*
 import retrofit2.Call
@@ -52,8 +49,8 @@ class ThirdFragment : Fragment() {
         super.onCreate(savedInstanceState)
         _binding = FragmentThirdBinding.inflate(layoutInflater)
 
-        val client: UserApi = Retrofit().getService()
-        val call: Call<User> = client.profile("Bearer " + token)
+        val retrofitClient = RetrofitClient.create()
+        val call = retrofitClient.profile("Bearer $token")
 
         call.enqueue(object : Callback<User> {
             override fun onResponse(call: Call<User>, response: Response<User>) {
@@ -97,11 +94,11 @@ class ThirdFragment : Fragment() {
 
         var sharedPref = requireActivity().applicationContext.getSharedPreferences("sharedpref", Context.MODE_PRIVATE)?:return
         val token = sharedPref.getString("TOKEN", " ")
-        Log.d("profile", token.toString())
+        Log.d("logout", token.toString())
 
         binding.textLogout.setOnClickListener {
-            val client: UserApi = Retrofit().getService()
-            val call: Call<LogoutResponse> = client.logout("Bearer $token")
+            val retrofitClient = RetrofitClient.create()
+            val call = retrofitClient.logout("Bearer $token")
             call.enqueue(object : Callback<LogoutResponse> {
                 override fun onResponse(
                     call: Call<LogoutResponse>,

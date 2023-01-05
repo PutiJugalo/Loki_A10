@@ -1,25 +1,33 @@
 package com.example.loki_a10
 
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationManagerCompat
+import com.example.loki_a10.Luthfia_Humaira_2011522005_UAS.Response.LaporKPSelesaiResponse
+import com.example.loki_a10.retrofitModel.RetrofitClient
 import com.google.firebase.FirebaseApp
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_lapor_kp_selesai.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class LaporKpSelesaiActivity : AppCompatActivity() {
+    private var _binding: LaporKpSelesaiActivity?= null
+    private val binding get() = _binding!!
 
     private lateinit var notificationManager: NotificationManagerCompat
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lapor_kp_selesai)
-
         supportActionBar?.hide()
 
         notificationManager = NotificationManagerCompat.from(this)
@@ -68,7 +76,29 @@ class LaporKpSelesaiActivity : AppCompatActivity() {
     }
     fun ke_home(view: View) {
         intent = Intent(this, MainActivity::class.java)
+            Toast.makeText(this, "Berhasil melaporkan KP telah selesai", Toast.LENGTH_SHORT).show()
         startActivity(intent)
+
+        val sharedPreferences = applicationContext?.getSharedPreferences("sharedPref", Context.MODE_PRIVATE) ?: return
+        val token = sharedPreferences.getString("Token","")
+
+        Log.d("laporKPSelesai", token.toString())
+
+        val retrofitClient = RetrofitClient.create()
+        val call = retrofitClient.laporKPSelesai("Bearer $token")
+
+        call.enqueue(object : Callback<LaporKPSelesaiResponse> {
+            override fun onResponse(call: Call<LaporKPSelesaiResponse>, response: Response<LaporKPSelesaiResponse>) {
+                val respon = response.body()
+                Log.d("laporKPSelesai-debug", "respon : " + respon)
+
+            }
+
+            override fun onFailure(call: Call<LaporKPSelesaiResponse>, t: Throwable) {
+                Log.d("laporKPSelesai-debug", t.localizedMessage)
+            }
+
+        })
     }
 }
 

@@ -56,13 +56,13 @@
             android:name=".anggota_kelompok"
             android:exported="false" />
         <activity
-            android:name=".detail_logbook"
+            android:name=".DetailLogbookActivity"
             android:exported="true" />
         <activity
             android:name=".edit_logbook"
             android:exported="false" />
         <activity
-            android:name=".tambah_logbook"
+            android:name=".TambahLogbookActivity"
             android:exported="false" />
         <activity
             android:name=".absensi_seminar"

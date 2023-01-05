@@ -8,8 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.loki_a10.databinding.ActivityLoginBinding
-import com.example.loki_a10.retrofitModel.Retrofit
-import com.example.loki_a10.retrofitModel.UserApi
+import com.example.loki_a10.retrofitModel.RetrofitClient
 import com.example.loki_a10.retrofitModel.UserRequest
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,9 +29,8 @@ class LoginActivity : AppCompatActivity() {
         val username = binding.inputUsernameLogin.text.toString()
         val password = binding.inputPasswordLogin.text.toString()
 
-        val client: UserApi = Retrofit().getService()
-
-        val call: Call<UserRequest> = client.login(username, password)
+        val retrofitClient = RetrofitClient.create()
+        val call = retrofitClient.login(username, password)
 
         call.enqueue(object : Callback<UserRequest> {
             override fun onFailure(call: Call<UserRequest>, t: Throwable) {
