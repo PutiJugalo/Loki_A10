@@ -37,4 +37,8 @@ interface UserApi {
     @POST("/api/attend-seminar-internship/5")
     fun attendSeminar(
         @Header("Authorization") token:String, ):Call<AbsenSeminarKPResponse>
+
+    @GET("/api/info-seminar-internship")
+    fun infoSeminar(
+        @Header("Authorization") token:String):Call<ListPesertaSeminarResponse>
 }

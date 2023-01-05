@@ -60,9 +60,9 @@ class SecondFragment : Fragment() {
 
         mhsLainList = ArrayList()
 
-        mhsLainList.add(InfoSeminarLain("Luthfia Humaira", "07/05/2022"))
-        mhsLainList.add(InfoSeminarLain("Puti Jugalo", "15/06/2022"))
-        mhsLainList.add(InfoSeminarLain("Fikri Nazif", "23/06/2022"))
+        mhsLainList.add(InfoSeminarLain("NADHILA FARIZA", "07/05/2020"))
+        mhsLainList.add(InfoSeminarLain("ADITYA ILHAM RAMADHAN", "15/06/2020"))
+        mhsLainList.add(InfoSeminarLain("SABRINA PRATAMA PUTRI", "23/06/2020"))
 
         adapter = AdapterInfoSeminarLain(mhsLainList)
         recycleView.adapter = adapter
