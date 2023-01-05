@@ -32,4 +32,9 @@ interface UserApi {
         @Field("new_password") new_password:String,
         @Field("confirm_password") confirm_password:String
     ):Call<UbahSandiResponse>
+
+    @FormUrlEncoded
+    @POST("/api/attend-seminar-internship/5")
+    fun attendSeminar(
+        @Header("Authorization") token:String, ):Call<AbsenSeminarKPResponse>
 }
