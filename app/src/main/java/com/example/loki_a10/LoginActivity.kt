@@ -50,10 +50,9 @@ class LoginActivity : AppCompatActivity() {
                     Log.d("login-debug", username + ":" + password + "|" + token)
 
                     //Shared Preference
-                    val sharedPref =
-                        getSharedPreferences("sharedpref", Context.MODE_PRIVATE) ?: return
-                    with(sharedPref.edit()) {
-                        putString("TOKEN", token)
+                    val sharedPref = getSharedPreferences("prefs", Context.MODE_PRIVATE)
+                    with (sharedPref.edit()) {
+                        putString("token", token)
                         apply()
                     }
                     Toast.makeText(this@LoginActivity, "Selamat Datang", Toast.LENGTH_SHORT).show()

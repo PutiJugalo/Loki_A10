@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 class UserRequest {
     @field:SerializedName("authorisation")
-    val authorisation: UserResponse? = null
+    val authorisation: Authorization? = null
 
     @field:SerializedName("status")
     val status: String? = null

@@ -1,5 +1,7 @@
 package com.example.loki_a10.retrofitModel
 
+import com.example.loki_a10.models.GetDataResponse
+import com.example.loki_a10.models.GetDetailKPResponse
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -32,4 +34,11 @@ interface UserApi {
         @Field("new_password") new_password:String,
         @Field("confirm_password") confirm_password:String
     ):Call<UbahSandiResponse>
+
+    @GET("/api/internships")
+    fun getData(@Header("Authorization") token:String) : Call<GetDataResponse>
+
+    @GET("/api/my-internship/2")
+    fun getDetail(@Header("Authorization") token:String) : Call<GetDetailKPResponse>
+
 }

@@ -7,13 +7,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationManagerCompat
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.loki_a10.databinding.ActivityAbsensiSeminarBinding
 import com.example.loki_a10.databinding.ActivityDetailKpBinding
-import android.widget.Toast
-import androidx.core.app.NotificationManagerCompat
 import com.google.firebase.FirebaseApp
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_absensi_seminar.*

@@ -73,7 +73,7 @@
         android:onClick="ke_permohonanKp"
         android:text="Permohonan KP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNamaInstansidiDetailKP"
+        app:layout_constraintTop_toBottomOf="@+id/Agency"
         tools:ignore="UnknownId" />
 
     <ImageView
@@ -89,7 +89,7 @@
         app:tint="#090808" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/Judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -103,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/appbar" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -113,8 +113,8 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintStart_toStartOf="@+id/Judul"
+        app:layout_constraintTop_toBottomOf="@+id/Judul" />
 
     <TextView
         android:id="@+id/textView27"
@@ -185,7 +185,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/Selesai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
@@ -209,10 +209,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+        app:layout_constraintTop_toBottomOf="@+id/Selesai" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/Supervisor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -237,10 +237,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+        app:layout_constraintTop_toBottomOf="@+id/Supervisor" />
 
     <TextView
-        android:id="@+id/textNamaInstansidiDetailKP"
+        android:id="@+id/Agency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"

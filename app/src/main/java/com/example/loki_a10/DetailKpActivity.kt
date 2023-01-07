@@ -1,16 +1,24 @@
 package com.example.loki_a10
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.loki_a10.databinding.ActivityDetailKpBinding
+import com.example.loki_a10.models.GetDataResponse
+import com.example.loki_a10.models.GetDetailKPResponse
 import com.example.loki_a10.mynotification.NotificationChannelActivity
+import com.example.loki_a10.retrofitModel.Retrofit
+import com.example.loki_a10.retrofitModel.UserApi
+import retrofit2.Call
+import java.util.NavigableMap
 
 class DetailKpActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityDetailKpBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,10 +30,18 @@ class DetailKpActivity : AppCompatActivity() {
         val bundle : Bundle? = intent.extras
         val namaInstansi = bundle!!.getString("namaInstansi")
 
-        binding.textNamaInstansidiDetailKP.text = namaInstansi
+        binding.Agency.text = namaInstansi
+        val sharedPref = getSharedPreferences("mahasiswapref", Context.MODE_PRIVATE)?: return
+        val Judul = sharedPref.getString("tittle",null)
+        val Nama = sharedPref.getString("grade",null)
+        val Supervisor = sharedPref.getString("supervisor",null)
+        val Agency = sharedPref.getString("Agency",null)
 
-//        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-//        supportActionBar!!.setHomeButtonEnabled(true)
+        binding.Judul.text = Judul
+        binding.nama.text = Nama
+        binding.Supervisor.text = Supervisor
+        binding.Agency.text = Agency
+
     }
     override fun onSupportNavigateUp(): Boolean {
         finish()
@@ -44,7 +60,7 @@ class DetailKpActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun ke_daftarSeminarKP(view: View) {
-        intent = Intent(this, DaftarSeminarKpActivity::class.java)
+        intent = Intent(this, dataPesertaSeminar::class.java)
         startActivity(intent)
     }
     fun ke_laporKPSelesai(view: View) {
